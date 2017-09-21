@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-translate-functions",
+  "version": "0.0.1",
+  "license": "",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GoogleCloudPlatform/nodejs-docs-samples.git"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "scripts": {
+    "lint": "samples lint",
+    "pretest": "npm run lint",
+  },
+  "dependencies": {
+    "@google-cloud/translate": "1.0.0",
+  }
+}
