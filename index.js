@@ -20,8 +20,5 @@ if (!req.text) {
         to: "en"
       };
 
-      console.log(`Translating text into `);
-      return translate.translate(payload.text, options);
-
-  res.send(translate.translate(payload.text, options));
+  res.send(translate.translate(req.text, options));
 };
