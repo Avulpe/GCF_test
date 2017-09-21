@@ -11,7 +11,7 @@ exports.translateHttp = function translateHttp (req, res) {
 if (!req.text) {
         throw new Error('Text not provided. Make sure you have a "text" property in your request');
       }
-      if (!payload.lang) {
+      if (!req.lang) {
         throw new Error('Language not provided. Make sure you have a "lang" property in your request');
       }
 
