@@ -8,12 +8,10 @@
 const translate = require('@google-cloud/translate')();
  
 exports.translateHttp = function translateHttp (req, res) {
-
-
       const options = {
         from: "ro",
         to: "en"
       };
 
-  res.send(translate.translate(req.body.text, options));
+  res.send(translate.translate(req.body.name, options).toString());
 };
